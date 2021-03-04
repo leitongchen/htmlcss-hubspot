@@ -110,17 +110,12 @@ a:hover {
 }
 
 /* HEADER */
-header nav:not(.cta-nav){
-    height: 80px;
-    background-color: aquamarine;
-}
-
 header ul li, 
 header ul {
     display: inline-block;
 }
 
-/* header cta section */
+/* header CTA NAV SECTION */
 .cta-nav {
     background-color: rgb(231, 247, 244);
     padding: 20px 0;
@@ -162,6 +157,23 @@ header ul {
     color: rgb(85, 171, 182);
 }
 
+/* header MENU NAV SECTION */
+header .menu-nav {
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 20px 0;
+}
+
+header .menu-nav a {
+    line-height: 38px;
+}
+header .menu-nav li {
+    margin: 0 8px;
+}
+header .menu .fas {
+    margin-left: 8px;
+}
 
 
 
