@@ -11,7 +11,7 @@ body {
 /* common classes */
 .wrapper {
     width: 80%;
-    min-width: 1200px;
+    min-width: 1000px;
     margin: auto;
 }
 
@@ -31,6 +31,7 @@ h5 {
     font-size: 16px;
 }
 p {
+    font-weight: 500;
     font-size: 16px;
 }
 p.caption {
@@ -47,6 +48,40 @@ p.caption {
 .t-white {
     color: white;
 }
+
+/* link del sito */
+a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #ff7a59;
+    text-decoration: underline;
+}
+
+/* pulsanti del sito */
+.btn {
+    border: none;
+    border-radius: 5px;
+}
+.btn.orange {
+    background-color: #ff7a59;
+    color: white;
+    border: 1px solid #ff7a59;
+
+}
+.btn.white {
+    background-color: white;
+    color:#ff7a59;
+    border: 1px solid #ff7a59;
+}
+.btn.small {
+    padding: 10px 10px;
+}
+
 
 /* float and clearfix */
 .f-left {
@@ -75,10 +110,59 @@ p.caption {
 }
 
 /* HEADER */
-header nav {
+header nav:not(.cta-nav){
     height: 80px;
     background-color: aquamarine;
 }
+
+header ul li, 
+header ul {
+    display: inline-block;
+}
+
+/* header cta section */
+.cta-nav {
+    background-color: rgb(231, 247, 244);
+    padding: 20px 0;
+}
+
+/* cta nav dimensione font */
+.cta-nav,
+.cta-nav [name="language"] {
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 40px;
+}
+
+/* cta parte sinistra */
+.cta-nav [name="language"]{
+    background-color: transparent;
+    color: #33475b;
+    border: none;
+
+    margin-right: 15px;
+}
+
+.cta-nav .contact-us {
+    border-left: 1px solid #33475b;
+    padding-left: 20px;
+}
+
+.fa-globe-asia {
+    color: #33475b;
+}
+
+/* cta parte destra */
+.cta-nav .btn {
+    margin-left: 15px;
+}
+
+.fa-search {
+    color: rgb(85, 171, 182);
+}
+
+
 
 
 /* PRODUCT */

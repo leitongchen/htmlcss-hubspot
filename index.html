@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -13,9 +15,29 @@
 </head>
 <body>
     <header>
-        <nav class="cta-nav clearfix wrapper border">
-            <div class="cta-sx f-left border h-50 col-6"></div>
-            <div class="cta-dx f-right border h-50 col-6"></div>
+        <nav class="cta-nav">
+            <div class="wrapper clearfix">
+                <div class="cta-sx t-dark f-left"> 
+                    <Label for="language"><i class="fas fa-globe-asia"></i></Label>
+                    <select name="language">
+                        <option value="english">English</option>
+                        <option value="italiano">Italiano</option>
+                        <option value="espanol">Espa&#241;ol</option>
+                    </select>
+                    <span class="contact-us"><a href="#">Contact Us</a></span>
+                </div>
+                <div class="cta-dx f-right">
+                    <span><i class="fas fa-search"></i></span>
+                    <ul>
+                        <li>
+                            <button class="btn white small">Log in</button>
+                        </li>
+                        <li>
+                            <button class="btn orange small">GetHubspotFree</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <nav class="menu-nav clearfix wrapper border">
             <div class="logo f-left border h-50 col-6"></div>
