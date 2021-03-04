@@ -4,3 +4,132 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+/* common classes */
+.wrapper {
+    width: 80%;
+    min-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 46px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+p {
+    font-size: 16px;
+}
+p.caption {
+    font-size: 14px;
+}
+
+
+.t-orange {
+    color: #ff7a59;
+}
+.t-dark {
+    color: #33475b;
+}
+.t-white {
+    color: white;
+}
+
+/* float and clearfix */
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.3%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-8 {
+    width: 66.7%;
+}
+
+/* HEADER */
+header nav {
+    height: 80px;
+    background-color: aquamarine;
+}
+
+
+/* PRODUCT */
+#product {
+    background-color: cadetblue;
+}
+
+
+/* COMMUNITY */
+#community {
+    background-color: cornflowerblue;
+}
+
+
+/* GROW WITH US */
+#grow-with-us {
+    background-color: darkgoldenrod;
+}
+
+
+/* utility classes */
+.border {
+    border: 2px solid black;
+}
+.h-50 {
+    height: 50px;
+}
+.h-80 {
+    height: 80px;
+}
+.h-100 {
+    height: 100px;
+}
+.h-150 {
+    height: 150px;
+}
+.h-200 {
+    height: 200px;
+}
+.h-300 {
+    height: 300px;
+}
+.h-400 {
+    height: 400px;
+}
+.h-500 {
+    height: 500px;
+}
+.h-600 {
+    height: 600px;
+}
+.h-700 {
+    height: 700px;
+}
