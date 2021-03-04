@@ -79,7 +79,10 @@ a:hover {
     border: 1px solid #ff7a59;
 }
 .btn.small {
-    padding: 10px 10px;
+    padding: 10px;
+}
+.btn.big {
+    padding: 20px
 }
 
 
@@ -171,11 +174,36 @@ header .menu-nav a {
 header .menu-nav li {
     margin: 0 8px;
 }
+
 header .menu .fas {
     margin-left: 8px;
 }
 
 
+/* HERO BANNER */
+#bg-hero {
+    background-image: url(../img/jumbotron.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.hero-text {
+    padding: 50px 0 100px;
+}
+
+.hero-text p {
+    line-height: 32px;
+
+    margin: 15px 0;
+}
+
+#hero .banner {
+    height: 100px;
+    background-color: rgb(121, 226, 177);
+    border-top:  4px solid #33475b;
+    border-bottom:  4px solid #33475b;
+}
 
 /* PRODUCT */
 #product {
