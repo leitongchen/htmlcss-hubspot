@@ -47,7 +47,6 @@ p.caption {
     line-height: 46px;
 }
 
-
 .t-orange {
     color: #ff7a59;
 }
@@ -92,9 +91,8 @@ a:hover {
     padding: 10px;
 }
 .btn.big {
-    padding: 20px
+    padding: 20px;
 }
-
 
 /* float and clearfix */
 .f-left {
@@ -121,6 +119,7 @@ a:hover {
 .col-8 {
     width: 66.7%;
 }
+
 
 /* HEADER */
 header ul li, 
@@ -355,14 +354,35 @@ header .menu .fas {
 }
 
 
-
-
-
-
 /* GROW WITH US */
 #grow-with-us {
-    background-color: darkgoldenrod;
+    padding: 50px 0;
 }
+
+.client-row {
+    padding-left: 80px;
+    margin-bottom: 50px;
+}
+
+.client-row .bigger-col{
+    padding: 20px 0 0 20px;
+}
+
+.client-logo .logo-img {
+    width: 15%;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.grow-row .grow-img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+
+
 
 
 /* utility classes */
