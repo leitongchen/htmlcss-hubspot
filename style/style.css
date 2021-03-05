@@ -40,6 +40,12 @@ p {
 p.caption {
     font-size: 14px;
 }
+/* simbolo + sezione community */
+.thin-symbol {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
+}
 
 
 .t-orange {
@@ -69,6 +75,7 @@ a:hover {
 .btn {
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .btn.orange {
     background-color: #ff7a59;
@@ -208,6 +215,7 @@ header .menu .fas {
     border-bottom:  4px solid #33475b;
 }
 
+
 /* PRODUCT */
 #product {
     background-color: rgb(231, 247, 244);
@@ -232,8 +240,8 @@ header .menu .fas {
 }
 
 /* immagine product title */
-#product .integration-pic {
-    height: 250px;
+#product .centered-pic {
+    height: 200px;
     width: 100%;
     object-fit: contain;
     margin: auto;
@@ -243,7 +251,13 @@ header .menu .fas {
     background-color: rgb(255, 255, 255);
 }
 
-.prod-pic {
+.h-row-pic {
+    height: 200px;
+    width: 200px;  
+    object-fit: contain;
+}
+
+.col-pic {
     height: 150px;
     width: 150px;  
     object-fit: contain;
@@ -255,7 +269,8 @@ header .menu .fas {
     margin: 50px 0;
 }
 
-.h-illustration .prod-pic,
+/* allineamento centrale illustraz e pulsante */
+.h-illustration .h-row-pic,
 .h-illustration button {
     display: block;
     margin: auto;
@@ -271,12 +286,12 @@ header .menu .fas {
     margin-left: 30px;
 }
 
-/* stile elenco check h e colonne */
+/* stile elenco check sia x orizzonatale che x colonne */
 #product .fa-check-circle {
     margin-right: 15px;
 }
 
-/* stile elenco check orizzontale */
+/* stile elenco check x orizzontale */
 .h-caption li {
     display: inline-block;
     margin-right: 25px;
@@ -306,20 +321,42 @@ header .menu .fas {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* COMMUNITY */
 #community {
-    background-color: cornflowerblue;
+    background: linear-gradient(117deg, rgb(108, 209, 197) 0%, rgb(66, 181, 219) 100%);;
+    padding: 50px 0;
+
+    text-align: center;
 }
+
+.comm-grid {
+    margin: 40px 0; 
+}
+
+.comm-card {
+    padding: 20px 30px;
+    border-right: 1px solid white;
+}
+
+.comm-card.odd-line {
+    border-bottom: 1px solid white;
+}
+
+.comm-row .comm-card:last-child {
+    border-right: none;
+}
+
+.comm-card img {
+    margin-bottom: 15px;
+}
+
+.comm-card p {
+    margin: 15px 0;
+}
+
+
+
+
 
 
 /* GROW WITH US */
