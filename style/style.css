@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Montserrat', Helvetica, sans-serif;
 }
@@ -47,9 +46,6 @@ p.caption {
     line-height: 46px;
 }
 
-.t-orange {
-    color: #ff7a59;
-}
 .t-dark {
     color: #33475b;
 }
@@ -80,7 +76,6 @@ a:hover {
     background-color: #ff7a59;
     color: white;
     border: 1px solid #ff7a59;
-
 }
 .btn.white {
     background-color: white;
@@ -96,6 +91,26 @@ a:hover {
 }
 .btn.big {
     padding: 20px;
+}
+/* pulsanti hover */
+.btn.gray:hover {
+    background-color: #ff7a59;
+    color: #33475b;
+}
+.btn.orange:hover {
+    background-color: white;
+    color:#ff7a59;
+    border: 1px solid #ff7a59;
+}
+.btn.white:hover {
+    background-color: #ff7a59;
+    color: white;
+    border: 1px solid #ff7a59;
+}
+
+.ruler {
+    height: 1px;
+    background-color: black;
 }
 
 /* float and clearfix */
@@ -135,6 +150,7 @@ header ul {
 .cta-nav {
     background-color: rgb(231, 247, 244);
     padding: 20px 0;
+    border-bottom: 1px solid #33475b;
 }
 
 /* cta nav dimensione font */
@@ -280,13 +296,13 @@ header .menu .fas {
 }
 
 .h-pop-feature h4,
-.h-pop-feature hr {
+.h-pop-feature .ruler {
     display: inline-block;
     vertical-align: middle;
 }
-.h-pop-feature hr {
-    width: 40%;
-    margin-left: 30px;
+.h-pop-feature .ruler {
+    width: 50%;
+    margin-left: 30px;   
 }
 
 /* stile elenco check sia x orizzonatale che x colonne */
@@ -321,6 +337,13 @@ header .menu .fas {
 
 .prod-column button {
     margin-top: 30px;
+}
+
+.prod-column .ruler {
+    height: 1px;
+    background-color: black;
+    width: 50%;
+    margin: 0 25%;  
 }
 
 
