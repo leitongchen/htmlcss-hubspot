@@ -39,7 +39,7 @@ p {
 p.caption {
     font-size: 14px;
 }
-/* simbolo + sezione community */
+/* simbolo + sezione community: line-height = h1 */
 .thin-symbol {
     font-size: 36px;
     font-weight: 400;
@@ -56,11 +56,9 @@ p.caption {
 /* link del sito */
 a {
     display: inline-block;
-
     text-decoration: none;
     color: inherit;
 }
-
 a:hover {
     color: #ff7a59;
     text-decoration: underline;
@@ -71,6 +69,7 @@ a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: transparent;
 }
 .btn.orange {
     background-color: #ff7a59;
@@ -90,7 +89,7 @@ a:hover {
     padding: 10px;
 }
 .btn.big {
-    padding: 20px;
+    padding: 20px 30px;
 }
 /* pulsanti hover */
 .btn.gray:hover {
@@ -110,7 +109,7 @@ a:hover {
 
 .ruler {
     height: 1px;
-    background-color: black;
+    background-color: #33475b;
 }
 
 /* float and clearfix */
@@ -218,7 +217,8 @@ header .menu .fas {
 }
 
 .hero-text {
-    padding: 50px 0 100px;
+    padding: 80px 0 80px;
+    width: 50%;
 }
 
 .hero-text p {
@@ -259,14 +259,14 @@ header .menu .fas {
 }
 
 /* immagine product title */
-#product .centered-pic {
+.product-title .centered-pic {
     height: 200px;
     width: 100%;
     object-fit: contain;
     margin: auto;
 }
 
-#product .prod-feature {
+#product .prod-row {
     background-color: rgb(255, 255, 255);
 }
 
@@ -283,7 +283,7 @@ header .menu .fas {
 }
 
 /* PROD FEATURE 1^ riga */
-.prod-feature.h-row {
+.prod-row {
     padding: 50px 50px;
     margin: 50px 0;
 }
@@ -295,6 +295,7 @@ header .menu .fas {
     margin: auto;
 }
 
+/* allineamento verticale titolo e riga  */
 .h-pop-feature h4,
 .h-pop-feature .ruler {
     display: inline-block;
@@ -305,12 +306,12 @@ header .menu .fas {
     margin-left: 30px;   
 }
 
-/* stile elenco check sia x orizzonatale che x colonne */
+/* stile x simbolo arancio */
 #product .fa-check-circle {
     margin-right: 15px;
 }
 
-/* stile elenco check x orizzontale */
+/* stile x elenco solo prod-row */
 .h-caption li {
     display: inline-block;
     margin-right: 25px;
@@ -330,7 +331,6 @@ header .menu .fas {
     padding: 40px 20px;
 }
 
-/* stile lista check colonne */
 .prod-column li {
     text-align: left;
 } 
@@ -340,8 +340,6 @@ header .menu .fas {
 }
 
 .prod-column .ruler {
-    height: 1px;
-    background-color: black;
     width: 50%;
     margin: 0 25%;  
 }
@@ -364,7 +362,7 @@ header .menu .fas {
     border-right: 1px solid white;
 }
 
-.comm-card.odd-line {
+.comm-row.border-bot{
     border-bottom: 1px solid white;
 }
 
@@ -413,6 +411,10 @@ header .menu .fas {
 footer {
     background-color: #33475b;
     padding: 50px 0;
+
+    color: #cdd6df;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .link-list {
@@ -427,18 +429,9 @@ footer h5 {
     margin-bottom: 20px;
 }
 
-.social-icons li, 
-.languages li,
-.policy li {
+footer li:not(.link-list li),
+.link-list .social-icons li {
     display: inline-block;
-}
-
-footer .link-list li,
-footer .languages,
-footer .copyright {
-    color: #cdd6df;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 footer .link-list>li {
@@ -449,12 +442,10 @@ footer .link-list>li {
     margin-right: 20px;
 }
 
-.links-row {
-    margin-bottom: 50px;
-}
-
 footer .languages {
     text-align: center;
+
+    margin-top: 50px;
     padding-bottom: 20px;
 
     border-bottom: 1px solid #cdd6df;
@@ -475,4 +466,3 @@ footer .copyright {
 
 .logo-copy img {
     display: block;
-}
